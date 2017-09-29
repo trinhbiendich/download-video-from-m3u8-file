@@ -20,6 +20,5 @@ now=$(date +"%Y%m%d%H%M_")
 ffmpeg -i file_video.ts -acodec copy -vcodec copy "$now$result.mp4"
 rm *.ts
 mv *.mp4 ../
-
 </pre>
 ## Now, You can open file_video.ts by VLC
