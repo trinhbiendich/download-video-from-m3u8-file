@@ -25,16 +25,16 @@ mv *.mp4 ../
 ### Some command to crop video and extract to photos
 <br>
 ### Crop video with ffmpeg <br>
-* 319:316 : is position you want to crop
-* 800:450 : is size you want to crop
+* 319:316 : is position you want to crop <br>
+* 800:450 : is size you want to crop <br>
 <pre>
 ffmpeg -i 201709291654_DNG13.mp4 -filter:v "crop=800:450:319:316" 201709291654_DNG13_out.mp4
 </pre>
-### Also you can see preview by
+### Also you can see preview by <br>
 <pre>
 ffplay -i 201709291654_DNG13.mp4 -vf "crop=800:450:319:316"
 </pre>
-### To extract image from video using vlc command.
+### To extract image from video using vlc command. <br>
 <pre>
 vlc "FILE.mp4" --video-filter=scene --vout=dummy --start-time=0 --stop-time=960 --scene-ratio=10 --scene-path="WHERE_IS_YOU_WANT_TO_SAVE" vlc://quit
 <pre>
