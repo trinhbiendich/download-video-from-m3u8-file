@@ -22,7 +22,7 @@ rm *.ts
 mv *.mp4 ../
 </pre>
 ## Now, You can open file_video.ts by VLC
-#Some command to crop video and extract to photos
+#### Some command to crop video and extract to photos
 <br>
 # Crop video with ffmpeg
 * 319:316 : is position you want to crop
@@ -30,11 +30,11 @@ mv *.mp4 ../
 <pre>
 ffmpeg -i 201709291654_DNG13.mp4 -filter:v "crop=800:450:319:316" 201709291654_DNG13_out.mp4
 </pre>
-# Also you can see preview by
+### Also you can see preview by
 <pre>
 ffplay -i 201709291654_DNG13.mp4 -vf "crop=800:450:319:316"
 </pre>
-# To extract image from video using vlc command.
+### To extract image from video using vlc command.
 <pre>
 vlc "FILE.mp4" --video-filter=scene --vout=dummy --start-time=0 --stop-time=960 --scene-ratio=10 --scene-path="WHERE_IS_YOU_WANT_TO_SAVE" vlc://quit
 <pre>
