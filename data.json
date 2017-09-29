@@ -1,0 +1,10 @@
+[
+	{
+		"baseUrl" : "http://example.com/",
+		"name" : "CHANEL09",
+		"line" : "v000000.ts",
+		"count" : 0,
+		"allow" : true,
+		"maxTotalToJoin" : 100
+	}
+]

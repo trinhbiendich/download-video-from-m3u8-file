@@ -12,5 +12,14 @@ var request = http.request('http://test/v.m3u8', function (res) { <br> <br>
 * Run to download by : node index.js <br>
 * after download done, cd to videos download folder <br>
 * Run "cat * > file_video.ts" <br> <br>
+* Convert to mp4 : ffmpeg -i file_video.ts -acodec copy -vcodec copy file_video.mp4
+<pre>
+cat * > file_video.ts
+result=${PWD##*/}
+now=$(date +"%Y%m%d%H%M_")
+ffmpeg -i file_video.ts -acodec copy -vcodec copy "$now$result.mp4"
+rm *.ts
+mv *.mp4 ../
 
+</pre>
 ## Now, You can open file_video.ts by VLC
