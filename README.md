@@ -22,9 +22,9 @@ rm *.ts
 mv *.mp4 ../
 </pre>
 ## Now, You can open file_video.ts by VLC
-#### Some command to crop video and extract to photos
+### Some command to crop video and extract to photos
 <br>
-# Crop video with ffmpeg
+### Crop video with ffmpeg <br>
 * 319:316 : is position you want to crop
 * 800:450 : is size you want to crop
 <pre>
